@@ -1,0 +1,12 @@
+import re
+
+
+def is_email(email):
+    check_email = re.search(r'^[A-z0-9]+[\.-]?[A-z0-9]+@\w+\.\w{2,3}$', email)
+    if check_email:
+        print(f'the {email} is a valid email')
+    else:
+        print(f'the {email} is not a valid email')
+
+
+is_email('h@h.sa')
